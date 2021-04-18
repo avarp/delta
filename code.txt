@@ -1,0 +1,3 @@
+<<<END
+Hello, i am \uD83D\uDE43 \n HoHoHo
+EN
