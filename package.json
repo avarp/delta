@@ -5,11 +5,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "main": "node index.js"
+    "main": "node index.js",
+    "test": "node test/index.js"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": ["<rootDir>/test/"],
+    "transform": {}
   },
   "author": "Artem Vorobev",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "express": "^4.17.1",
+    "jest": "^27.0.1",
+    "lodash": "^4.17.21",
+    "snabbdom": "^3.0.1",
+    "ws": "^7.4.5"
   }
 }

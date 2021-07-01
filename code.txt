@@ -1,3 +1,21 @@
-<<<END
-Hello, i am \uD83D\uDE43 \n HoHoHo
-EN
+// type statements
+
+type Union = A | B
+
+type Intersection = A & B
+
+type Subtraction = A - B
+
+type Negation = ^A
+
+type Tuple = {A, B, C}
+
+type List = [A]
+
+type Record = {key1: A, key2: B, key3: C}
+
+type Variants = Variant1: A / Variant2: B / Variant3: C
+
+type Function = A => B
+
+type Generic(A, B, C) = D

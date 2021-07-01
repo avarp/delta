@@ -1,9 +1,12 @@
-import {HEREDOC_LITERAL} from './ast/string-literals.js'
 import {readFileSync} from 'fs'
+import {lexer} from './lexer/lexer.js'
 
 
-console.log(
-  HEREDOC_LITERAL.parse(
+console.dir(
+  lexer.match(0,
     readFileSync('code.txt', {encoding: 'utf-8'})
-  )
+  ),
+  {
+    depth: 5
+  }
 )

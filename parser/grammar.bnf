@@ -1,0 +1,10 @@
+Program ::= RootStatement
+          | RootStatement + Program
+
+RootStatement ::= TypeStatement
+                | ValueStatement
+                | ImportStatement
+
+TypeStatement ::= KEYWORD_EXPORT? + KEYWORD_TYPE + IDENTIFIER + "=" + TypeExpression
+
+ValueStatement ::= KEYWORD_EXPORT? + TypeExpression? + IDENTIFIER + "=" + ValueExpression
